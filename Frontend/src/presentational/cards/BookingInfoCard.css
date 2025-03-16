@@ -1,0 +1,80 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bookingInfoCard {
+  margin-top: 50px;
+  width: 60vw;
+  border-radius: 4px;
+  outline: 1px solid #5db85b;
+}
+.cardHeader {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.PNR {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.changeLink {
+  font-size: 20px;
+  color: #5db85b;
+  font-weight: 600;
+  margin-bottom: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.trainInfo {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sourceAndDestination {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  /* margin-bottom: 10px; */
+}
+.source {
+  margin-right: 8px;
+  color: #858585;
+}
+.destination {
+  margin-left: 8px;
+  color: #858585;
+}
+.cardFooter {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #858585;
+}
+@media screen and (max-width: 850px) {
+  .bookingInfoCard {
+    width: 58vw;
+  }
+  .PNR {
+    font-size: 20px;
+  }
+  .changeLink {
+    font-size: 14px;
+  }
+  .sourceAndDestination {
+    flex-direction: column;
+  }
+  .destination {
+    margin-left: 0px;
+  }
+  .sourceAndDestination {
+    margin-bottom: 8px;
+  }
+}
